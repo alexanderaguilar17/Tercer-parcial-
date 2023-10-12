@@ -14,10 +14,26 @@ for (let i = 0; i < alumnos.length; i++) {
 }}
 function calcularPromedio() {
 nota = 0;
-  for (let i = 0; i < alumnos.length; i++) {
- notas  += alumnos[i].nota;
+
+
+let estudiante = {
+  nota: 85
+};
+
+function calcularPromedio(estudiante) {
+  
+  if (estudiante.nota) {
+    
+    let promedio = estudiante.nota / 100;
+    return promedio;
+  } else {
+    return "Error: No se encontró la nota en el objeto";
   }
-  return nota / alumnos.length;
+}
+
+let promedioEstudiante = calcularPromedio(estudiante);
+console.log("El promedio del estudiante es:", promedioEstudiante);
+
 }
 function MostrarMenu (){
   let continuar = true;

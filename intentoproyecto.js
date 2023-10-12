@@ -56,8 +56,7 @@ calcularPromedio();
  }
  else if (op=="d"){
  alert("good bay")
- continuar = false;
- }
+ continuar = false; }
 }}
  MostrarMenu ();
   
